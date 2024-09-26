@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ labels:
+   run: nginx # 标签
+ name: nginx # Pod名称
+spec:
+  containers: # 配置容器
+  - image: nginx:1.15.12 # 镜像名称
+    name: nginx # 容器名称
+    command: ["sleep", "10"]
